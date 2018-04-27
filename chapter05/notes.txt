@@ -1,0 +1,24 @@
+Optimization
+	-finds the best solution to a problem by trying many different solutions and scoring them to determine their quality
+Cost Function
+	in group travel example:
+	-Price : total cost
+	-Travel time : time everyone spends traveling
+	-Waiting time : time spent waiting for other members and in connections
+	-Departure time : traveling at early or late times
+	-car rental : return the car in timely manor
+Random Searching
+	-the least efficient, not a very good optimization method
+Hill Climbing
+	-starts with random solutions and looks for neighboring solutions that are better
+	-could get stuck at local min instead of global min
+Simulated Annealing
+	-starts with random solution and changes a single variable to find a lower solution
+	-similar to hill climbing but attempts to avoid local mins
+Genetic Algorithms
+	-initially create a set of random solutions known as the population
+	-top solutions are added to new population called the next generation
+	-mutation: small, simple, random change by changing a single number
+	-crossover/breeding: involves taking two of the best solutions and combining them
+
+

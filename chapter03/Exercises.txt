@@ -1,0 +1,7 @@
+3. Try using actual (Pythagorean) distance for blog clustering. How does this change the results?
+    A. This seemed to cluster the blogs into smaller groups with more differences. The pythagorean distance dendrogram has about 15 sections or clusters whereas the pearson has about 5. 
+    
+5. Modify the K-means clustering function to return, along with the cluster results, the total distance between all the items and their respective centroids. 
+
+6. After completing exercise 5, create a function that runs K-means clustering over different values of k. How does the total distance change as the number of clusters increases? At what point does the improvement from having more clusters become very small?
+    A. The total distance generally decreases however, for this dataset, after about 25 the improvement is no longer significant. The distances get small and do not change much after each increase in k. 

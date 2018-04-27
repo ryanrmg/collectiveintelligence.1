@@ -1,0 +1,10 @@
+euclidean distance vs. pearson correlation
+    euclidean distance is simple pythagorean distance
+    pearson correlation measures how well the data fits a straight line
+        closer points are to the line -> higher the pearson score; max is 1, min is -1
+        corrects grade inflation
+        
+        
+user-based vs item-based filtering
+    user-based finds similar users and ranks based on that however users can be dynamic 
+    item-based finds similarities between items, less dynamic

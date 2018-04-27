@@ -1,0 +1,32 @@
+Searching and Ranking
+Search Engine
+	crawling
+	-BeautifulSoup and urllib to index and crawl links
+	-find text elements 
+	-strips html of tags and separates words 
+	fixed set of documents
+Content-Based Ranking
+	-Word Frequency
+		-The number of times the words in the query appear in the document
+	-Document Location
+		-The main subject of a document will probably appear near the begining.
+	-Word distance
+		-If there are multiple words in a query, they should appear close together in the document
+Inbound Links
+	-pages where the url has been referenced or linked
+	-academic papers use this often
+PageRank
+	-probability that someone randomly clicks on a page
+	-idea: more links -> higher probability
+
+Neural Networks
+	learn to associate searches with results based on what links people click after they get a list of search results
+	consist of a set of nodes and connections
+Multilayer Perceptron Network (MLP)
+	multiple layers of neurons
+		first layer takes the input 
+		last layer gives the output
+	power in a neural network is that it can make predictions based on similar queries to give results for queries that it has never seen before
+	neural networks use sigmoid functions
+	-tanh
+	

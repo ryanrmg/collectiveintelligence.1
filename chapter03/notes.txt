@@ -1,0 +1,24 @@
+Supervised versus Unsupervised Learning
+    Supervised learning
+        techniques that use example inputs and outputs to learn how to make predictions
+            examples:
+                neural networks
+                decision trees
+                support-vector machines
+                Bayesian filtering
+    Unsupervised learning
+        is not trained with correct vs incorrect
+        goal : find structure within a set of data where no one piece of data is the answer
+        take the data and find distinct groups that exist within the data
+            examples:
+            clustering
+            non-negative matrix factorization
+            self-organizing maps
+
+often necessary to cluster on both rows and columns
+    examples:
+        find items that are commonly bought together
+        find words that are commonly used together
+        
+K-means clustering 
+    much more efficient 
