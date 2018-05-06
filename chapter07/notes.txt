@@ -1,0 +1,21 @@
+Training the Tree
+    CART(Classification and Regression Trees)
+        first create a root node
+        then choose the best variable to divide up the data
+        looks at different variables and decides which would separate outcomes in a way that makes it easier to predict
+        find a variable that makes to sets with least possible mixing
+    Gini Impurity
+        the expected error rate if one of the results from a set is randomly applied to one of the items in the set
+    Entropy
+        the amount of disorder in a set
+        the number of times a number appears divided by the number of rows
+        everyone becomes subscriber, entropy is 0
+        penalize mixed sets more harshly than Gini Impurity
+
+applications
+    customer profiling, financial risk analysis, assisted diagnosis, traffic prediction
+    
+    Pruning
+        checking pairs of nodes that have a common parent to see if merging them would increase entropy by less than specified threshold. 
+    if data is missing, function can follow both sides of tree and weight things differently to find solution
+    
