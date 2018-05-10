@@ -110,7 +110,8 @@ def randomoptimize(domain,costf):
 
 def hillclimb(domain,costf):
       # Create a random solution
-    sol=[random.randint(domain[i][0],domain[i][1]) for i in range(len(domain))]
+    sol=[random.randint(domain[i][0],domain[i][1]) 
+         for i in range(len(domain))]
       # Main loop
     while 1:
         # Create list of neighboring solutions
@@ -168,8 +169,9 @@ def annealingoptimize(domain,costf,T=10000.0,cool=0.95,step=1):
         T=T*cool
     return vec
 
-def geneticoptimize(domain,costf,popsize=50,step=1, mutprod=0.2,elite=0.2,maxiter=100):
-  # Mutation Operation
+def geneticoptimize(domain,costf,popsize=50,step=1, 
+                    mutprod=0.2,elite=0.2,maxiter=100):
+    # Mutation Operation
     def mutate(vec):
         i=random.randint(0,len(domain)-1)
         if random.random()<0.5 and vec[i]>domain[i][0]:
@@ -185,7 +187,8 @@ def geneticoptimize(domain,costf,popsize=50,step=1, mutprod=0.2,elite=0.2,maxite
   # Build the initial population
     pop=[]
     for i in range(popsize):
-        vec=[random.randint(domain[i][0],domain[i][1]) for i in range(len(domain))]
+        vec=[random.randint(domain[i][0],domain[i][1]) 
+             for i in range(len(domain))]
         pop.append(vec)
   
   # How many winners from each generation?
