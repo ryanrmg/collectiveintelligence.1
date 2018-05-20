@@ -82,7 +82,7 @@ def entropy(rows):
     return ent
     
     
-def buildtree(rows,scoref=entropy):
+def buildtree(rows,scoref=entropy,mingain=0.1):
     if len(rows)==0: return decisionnode()
     current_score=scoref(rows)
 
@@ -96,20 +96,20 @@ def buildtree(rows,scoref=entropy):
         # Generate the list of different values in
         # this column
         column_values={}
-    for row in rows:
-        column_values[row[col]]=1
+        for row in rows:
+            column_values[row[col]]=1
         # Now try dividing the rows up for each value
         # in this column
-    for value in column_values.keys():
-        (set1,set2)=divideset(rows,col,value)
+        for value in column_values.keys():
+            (set1,set2)=divideset(rows,col,value)
       
             # Information gain
-        p=float(len(set1))/len(rows)
-        gain=current_score-p*scoref(set1)-(1-p)*scoref(set2)
-        if gain>best_gain and len(set1)>0 and len(set2)>0:
-            best_gain=gain
-            best_criteria=(col,value)
-            best_sets=(set1,set2)
+            p=float(len(set1))/len(rows)
+            gain=current_score-p*scoref(set1)-(1-p)*scoref(set2)
+            if gain>best_gain and len(set1)>0 and len(set2)>0:
+                best_gain=gain
+                best_criteria=(col,value)
+                best_sets=(set1,set2)
       # Create the sub branches   
     if best_gain>0:
         trueBranch=buildtree(best_sets[0])

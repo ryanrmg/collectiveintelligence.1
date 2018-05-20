@@ -1,7 +1,7 @@
 import xml.dom.minidom
 import urllib2
 
-zwskey="my api jawn"
+zwskey="X1-ZWz1chwxis15aj_9skq6"
 
 def getaddressdata(address,city):
     escad=address.replace(' ','+')
